@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { Container } from '@chakra-ui/react';
 
 
 const Home: NextPage = () => {
@@ -8,7 +9,10 @@ const Home: NextPage = () => {
       <Head>
         <title>Next Chakra</title>
       </Head>
-      <h1>Hello, Next Chakra</h1>
+      <Container maxW={'container.xl'} p={0}>
+        <h1>Hello, Next Chakra</h1>
+      </Container>
+
     </>
   );
 };

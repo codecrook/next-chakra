@@ -8,3 +8,5 @@ const App = ({ Component, pageProps }: AppProps) => {
         </ChakraProvider>
     );
 };
+
+export default App;
