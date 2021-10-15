@@ -1,4 +1,9 @@
-import { extendTheme, theme as base, withDefaultColorScheme } from "@chakra-ui/react";
+import {
+    extendTheme,
+    theme as base,
+    withDefaultColorScheme,
+    withDefaultVariant
+} from "@chakra-ui/react";
 
 const theme = extendTheme({
     colors: {
@@ -23,6 +28,10 @@ const theme = extendTheme({
     withDefaultColorScheme({
         colorScheme: 'brand',
         components: ['Button', 'Checkbox']
+    }),
+    withDefaultVariant({
+        variant: 'filled',
+        components: ['Input', 'Select']
     })
 );
 
