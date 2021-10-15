@@ -45,7 +45,18 @@ const theme = extendTheme({
     },
     components: {
         Input: { ...inputSelectStyles },
-        Select: { ...inputSelectStyles }
+        Select: { ...inputSelectStyles },
+        Checkbox: {
+            baseStyle: {
+                control: {
+                    borderRadius: 'none',
+                    _focus: {
+                        ring: 2,
+                        ringColor: 'brand.500',
+                    },
+                },
+            },
+        },
     }
 },
     withDefaultColorScheme({
